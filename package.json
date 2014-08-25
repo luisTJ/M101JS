@@ -1,0 +1,36 @@
+{
+  "name": "M101JS",
+  "version": "0.0.0",
+  "description": "Blog Project for M101JS",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt-nodejs": "~0.0.3",
+    "body-parser": "^1.6.5",
+    "consolidate": "~0.9.1",
+    "cookie-parser": "^1.3.2",
+    "express": ">=3.x",
+    "mongodb": "~1.3.9",
+    "swig": "~0.14.0",
+    "validator": "~1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luisTJ/M101JS.git"
+  },
+  "author": "LuisTJ",
+  "license": "BSD",
+  "private": true,
+  "keywords": [
+    "mongodb",
+    "nodejs",
+    "excercise"
+  ],
+  "bugs": {
+    "url": "https://github.com/luisTJ/M101JS/issues"
+  },
+  "homepage": "https://github.com/luisTJ/M101JS"
+}
