@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 MongoClient.connect('mongodb://localhost:27017/blog', function(err, db) {
     "use strict";
     if(err) throw err;
-
+    var PORT = 8082;
     // Register our templating engine
     app.engine('html', cons.swig);
     app.set('view engine', 'html');
@@ -27,6 +27,6 @@ MongoClient.connect('mongodb://localhost:27017/blog', function(err, db) {
     // Application routes
     routes(app, db);
 
-    app.listen(3000);
-    console.log('Express server listening on port 3000');
+    app.listen(PORT);
+    console.log('Express server listening on port '+ PORT);
 });
