@@ -12,7 +12,6 @@ function SessionHandler (db) {
         var session_id = req.cookies.session;
         sessions.getUsername(session_id, function(err, username) {
             "use strict";
-
             if (!err && username) {
                 req.username = username;
             }
