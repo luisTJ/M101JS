@@ -46,7 +46,7 @@ function PostsDAO(db) {
 
     this.getPosts = function (num, callback) {
         "use strict";
-
+        // homwork 4_3 tune this query-- add index to date desc
         posts.find().sort('date', -1).limit(num).toArray(function (err, items) {
             "use strict";
 
@@ -60,7 +60,7 @@ function PostsDAO(db) {
 
     this.getPostsByTag = function (tag, num, callback) {
         "use strict";
-
+        // homwork 4_3 tune this query -- add index to tags
         posts.find({ tags: tag }).sort('date', -1).limit(num).toArray(function (err, items) {
             "use strict";
 
@@ -74,6 +74,7 @@ function PostsDAO(db) {
 
     this.getPostByPermalink = function (permalink, callback) {
         "use strict";
+        // homwork 4_3 tune this query -- add index to permalink
         posts.findOne({'permalink': permalink}, function (err, post) {
             "use strict";
 
